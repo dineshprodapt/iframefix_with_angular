@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="ionicApp">
+<html>
     <head>
 	<!-- ionic/angularjs CSS -->
     <link href="css/ionic.css" rel="stylesheet">
     <link href="css/ionic-custom.css" rel="stylesheet">
     <!-- ionic/angularjs js bundle -->
     <script type="text/javascript" src="js/ionic.bundle.js"></script>
-	<script>
-	angular.module('ionicApp', ['ionic'])
-.controller('MainCtrl', function($scope) { 
-  $scope.iframeHeight = window.innerHeight;
-});
-	</script>
     </head>
-    <body ng-controller="MainCtrl">
-		<iframe src="https://suns247.windstream.com:8183/mobile.action?token=010041760&billsys=CAMS" ng-style="{height: iframeHeight + 'px'}" id="iframeid" width="100%" ></iframe>	
+    <body>
+		<input type="button" id="button1" class="btn" onclick="window.location.href='iframe.html'" value="Iframe content">
     </body>
 </html>
